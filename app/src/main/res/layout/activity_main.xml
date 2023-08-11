@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:background="@color/black"
+        android:logo="@drawable/ic_launcher_foreground"
+        android:subtitle="Custom Listview"
+        android:subtitleTextAppearance="@style/TextAppearance.AppCompat.Large"
+        android:subtitleTextColor="@color/white"></Toolbar>
+
+    <ListView
+        android:id="@+id/lvFruits"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".6"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="?android:attr/listDivider" />
+
+    <EditText
+        android:id="@+id/etTile"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/etImageLink"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:ems="10"
+        android:hint="Image URL"
+        android:inputType="text" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight=".1"
+            android:text="Reset" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:text="Add"/>
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:text="Update"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+</LinearLayout>
